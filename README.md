@@ -23,12 +23,12 @@ Pada tugas ini, kami diminta untuk:
 
 | Nama Anggota | Tugas |
 |---|---|
-| Anggota 1 | Analisis Single Responsibility Principle (SRP) |
-| Anggota 2 | Analisis Open/Closed Principle (OCP) |
-| Anggota 3 | Analisis Liskov Substitution Principle (LSP) |
-| Anggota 4 | Analisis Interface Segregation Principle (ISP) |
-| Anggota 5 | Analisis Dependency Inversion Principle (DIP) |
-| Anggota 6 | Perbaikan kode & sinkronisasi GitHub |
+| Gayuh | Analisis Single Responsibility Principle (SRP) |
+| Rindy | Analisis Open/Closed Principle (OCP) |
+| Keisha | Analisis Liskov Substitution Principle (LSP) |
+| Bintang | Analisis Interface Segregation Principle (ISP) |
+| Amelia | Analisis Dependency Inversion Principle (DIP) |
+| Dimas | Perbaikan kode & sinkronisasi GitHub |
 
 ---
 
@@ -132,5 +132,6 @@ Lorem ipsum dolor amet
 
 ## ✨ Author
 
-Kelompok 2 Pemrograman Berorientasi Object  
-SMK Rekayasa Perangkat Lunak
+Kelompok 2 
+Mata Kuliah Pemrograman Berorientasi Object  
+Universitas Sebelas Maret
