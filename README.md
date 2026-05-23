@@ -71,11 +71,7 @@ Link:
 
 ## 06. Membuat atau Mengedit File
 - Setiap anggota mengerjakan bagiannya masing-masing.
-- Contoh:
-  - Anggota 1 mengerjakan analisis SRP
-  - Anggota 2 mengerjakan analisis OCP
-  - dan seterusnya
-- format filenya contoh: srp_analysis_dimas.py
+- Contoh format file: srp_analysis_dimas.py
 - Contoh isi `srp_analysis_dimas.py`:
 
 ```python id="a4f61z"
