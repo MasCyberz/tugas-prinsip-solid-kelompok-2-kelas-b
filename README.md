@@ -114,7 +114,7 @@ class Hewan:
 
 ---
 
-## 08. Sinkronisasi Perubahan Kembali
+## 09. Sinkronisasi Perubahan Kembali
 - Setelah mengerjakan, klik **Fetch Origin** atau **Pull Origin** lagi.
 - Tujuannya agar file project selalu update dan tidak bentrok dengan perubahan anggota lain.
 
