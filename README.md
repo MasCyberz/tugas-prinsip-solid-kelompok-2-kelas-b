@@ -105,7 +105,7 @@ class Hewan:
 ---
 
 ## 08. Push ke GitHub
-- Setelah commit berhasil, klik tombol **Push Origin**
+- Setelah commit berhasil, klik tombol **Push Origin**, biasanya ini ada di menu atas atau di tampilan utama github desktop
 - Tujuannya agar perubahan tersimpan di repository GitHub online.
 
 ---
