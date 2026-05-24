@@ -144,7 +144,7 @@ Setelah sukses melakukan push, saatnya menggabungkan code kamu ke branch utama m
 
 # 📚 Kesimpulan
 
-Lorem ipsum dolor amet
+Lorem ipsum dolor amet.
 
 ---
 
