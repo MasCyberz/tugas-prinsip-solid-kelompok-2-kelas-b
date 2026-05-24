@@ -71,8 +71,8 @@ Link:
 
 ## 06. Membuat atau Mengedit File
 - Setiap anggota mengerjakan bagiannya masing-masing.
-- Contoh format file: `srp_analysis_dimas.py`
-- Contoh isi `srp_analysis_dimas.py`:
+- Contoh format file: `srp_analisis_dimas.py`
+- Contoh isi `srp_analisis_dimas.py`:
 
 ```python id="a4f61z"
 # Single Responsibility Principle
