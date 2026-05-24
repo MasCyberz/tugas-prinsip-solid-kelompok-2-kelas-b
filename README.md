@@ -59,18 +59,27 @@ Link:
 ---
 
 ## 04. Sinkronisasi Perubahan Teman
-- Sebelum mulai mengerjakan, klik **Fetch Origin** atau **Pull Origin**. Biasanya ini dibagian menu atas atau di kanan tengah atas yang berbentuk tombol
+- Sebelum mulai mengerjakan, klik **Fetch Origin** atau **Pull Origin** (jika ada pembaruan). Biasanya ini dibagian menu atas atau di kanan tengah atas yang berbentuk tombol
 - Tujuannya agar file project selalu update dan tidak bentrok dengan perubahan anggota lain.
 
 ---
 
 ## 05. Membuka Folder Project
-- Setelah repository berhasil di-clone, klik **Show in VSCode**.
+- Setelah repository berhasil di-clone, klik **Show in VSCode** (atau Show in Explorer jika ingin membuka foldernya manual).
 
 ---
 
-## 06. Membuat atau Mengedit File
-- Setiap anggota mengerjakan bagiannya masing-masing.
+## 06. Membuat Branch Baru (Bukan Branch Utama)
+Sebelum mulai coding, pastikan kamu tidak bekerja langsung di branch main.
+- Di GitHub Desktop, klik menu Current Branch di bagian atas.
+- Klik tombol New Branch.
+- Beri nama branch sesuai dengan fitur atau tugas yang sedang kamu kerjakan (contoh: analisis-srp atau perbaikan-bug-srp).
+- Klik Create Branch.
+
+---
+
+## 07. Membuat atau Mengedit File
+- Sekarang kamu sudah berada di branch barumu. Buka VS Code dan kerjakan bagianmu masing-masing.
 - Contoh format file: `srp_analisis_dimas.py`
 - Contoh isi `srp_analisis_dimas.py`:
 
@@ -92,25 +101,34 @@ class Hewan:
 
 ---
 
-## 07. Commit Perubahan
-- Setelah selesai mengedit file:
+## 08. Commit Perubahan
+- Setelah selesai coding dan menyimpan file:
   - Buka GitHub Desktop
   - Isi kolom **Summary**, bagian kiri bawah
   - Contoh:
     ```bash
     Menambahkan analisis SRP - Ken Gayuh
     ```
-- Klik **Commit to main**
+- Klik tombol Commit to **[nama-branch-kamu]**.
 
 ---
 
-## 08. Push ke GitHub
-- Setelah commit berhasil, klik tombol **Push Origin**, biasanya ini ada di menu atas atau di tampilan utama github desktop
+## 09. Push ke GitHub
+- Setelah commit berhasil, klik tombol **Publish branch** (atau Push origin), biasanya ini ada di menu atas atau di tampilan utama github desktop
 - Tujuannya agar perubahan tersimpan di repository GitHub online.
 
 ---
 
-## 09. Sinkronisasi Perubahan Kembali
+## 10. Membuat Pull Request (PR)
+Setelah sukses melakukan push, saatnya menggabungkan code kamu ke branch utama melalui review kelompok.
+- Di GitHub Desktop, akan muncul tombol biru bertuliskan Create Pull Request. Klik tombol tersebut.
+- Kamu akan otomatis diarahkan ke browser (halaman web GitHub).
+- Periksa kembali perubahanmu, isi deskripsi PR jika diperlukan, lalu klik tombol Create pull request di halaman web tersebut.
+- Selesai! Anggota kelompok lain atau ketua proyek sekarang bisa memeriksa dan melakukan merge code kamu ke branch **main**.
+
+---
+
+## 11. Sinkronisasi Perubahan Kembali
 - Setelah mengerjakan, klik **Fetch Origin** atau **Pull Origin** lagi.
 - Tujuannya agar file project selalu update dan tidak bentrok dengan perubahan anggota lain.
 
