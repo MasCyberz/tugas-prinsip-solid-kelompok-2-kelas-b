@@ -126,7 +126,7 @@ class Hewan:
 
 # 📚 Kesimpulan
 
-Lorem ipsum dolor amet
+Lorem ipsum dolor amet.
 
 ---
 
