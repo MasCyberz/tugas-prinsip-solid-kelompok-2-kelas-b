@@ -40,62 +40,49 @@ from abc import ABC, abstractmethod
 
 # PERBAIKAN KODE SESUAI SOLID
 
+# ABSTRACT CLASS
 
-# Interface untuk makan
-class BisaMakan(ABC):
-
-    @abstractmethod
-    def makan(self):
-        pass
-
-
-# Interface khusus hewan yang bisa terbang
-class BisaTerbang(ABC):
-
-    @abstractmethod
-    def terbang(self):
-        pass
-
-
-# CLASS DASAR HEWAN
-
-class Hewan(BisaMakan):
-
-    def __init__(self, nama, jenis):
+class Hewan(ABC):
+    def __init__(self, nama):
         self.nama = nama
-        self.jenis = jenis
 
+    @abstractmethod
     def makan(self):
-        print(f"{self.nama} sedang makan.")
+        pass
 
 
-# CLASS BURUNG
+# INTERFACE PERILAKU
 
-# ANALISIS:
-# Burung bisa makan dan bisa terbang. Maka class ini menggunakan interface BisaTerbang.
-
-class Burung(Hewan, BisaTerbang):
-
+class BisaTerbang:
     def terbang(self):
         print(f"{self.nama} sedang terbang.")
 
+class BisaBerenang:
+    def berenang(self):
+        print(f"{self.nama} sedang berenang.")
 
-# CLASS KUCING
-
-# ANALISIS:
-# Kucing hanya makan dan tidak perlu method terbang(). Ini sudah sesuai prinsip ISP.
-
-class Kucing(Hewan):
-    pass
+class BisaBerlari:
+    def berlari(self):
+        print(f"{self.nama} sedang berlari.")
 
 
-# CLASS KANDANG
+# IMPLEMENTASI HEWAN
 
-# ANALISIS:
-# Class ini sekarang hanya bertugas menyimpan data hewan. Ini sudah sesuai SRP.
+class Singa(Hewan, BisaBerlari):
+    def makan(self):
+        print(f"{self.nama} sedang makan daging.")
+
+class Burung(Hewan, BisaTerbang):
+    def makan(self):
+        print(f"{self.nama} sedang makan biji-bijian.")
+
+class Ikan(Hewan, BisaBerenang):
+    def makan(self):
+        print(f"{self.nama} sedang makan pelet.")
+
+# KANDANG
 
 class Kandang:
-
     def __init__(self):
         self.hewan_list = []
 
@@ -103,59 +90,49 @@ class Kandang:
         self.hewan_list.append(hewan)
 
 
-# CLASS PEMBERSIH KANDANG
+# PEMBERSIHAN KANDANG
 
-# ANALISIS:
-# Tugas membersihkan kandang dipisah agar tanggung jawab class tidak bercampur.
-
-class PembersihKandang:
-
-    def bersihkan(self):
+class PembersihanKandang:
+    def bersihkan_kandang(self):
         print("Kandang dibersihkan.")
 
 
-# CLASS KEBUN BINATANG
-
-# ANALISIS:
-# Class ini menggunakan dependency injection. Jadi tidak membuat object Kandang langsung. Ini sudah sesuai DIP.
+# KEBUN BINATANG
 
 class KebunBinatang:
-
     def __init__(self, kandang):
         self.kandang = kandang
 
     def rawat_semua_hewan(self):
-
         for hewan in self.kandang.hewan_list:
 
-            # Semua hewan makan
             hewan.makan()
 
-            # Hanya hewan tertentu yang bisa terbang
             if isinstance(hewan, BisaTerbang):
                 hewan.terbang()
 
+            if isinstance(hewan, BisaBerenang):
+                hewan.berenang()
+
+            if isinstance(hewan, BisaBerlari):
+                hewan.berlari()
 
 
-# PENGGUNAAN PROGRAM
+# TEST PROGRAM
 
-# Membuat kandang
-kandang = Kandang()
+if __name__ == "__main__":
 
-# Membuat object hewan
-burung = Burung("Elang", "Burung")
-kucing = Kucing("Milo", "Kucing")
+    kandang = Kandang()
 
-# Menambahkan hewan ke kandang
-kandang.tambah_hewan(burung)
-kandang.tambah_hewan(kucing)
+    kandang.tambah_hewan(Singa("Simba"))
+    kandang.tambah_hewan(Burung("Elang"))
+    kandang.tambah_hewan(Ikan("Nemo"))
 
-# Membuat kebun binatang
-kebun_binatang = KebunBinatang(kandang)
+    kebun_binatang = KebunBinatang(kandang)
 
-# Merawat semua hewan
-kebun_binatang.rawat_semua_hewan()
+    kebun_binatang.rawat_semua_hewan()
 
-# Membersihkan kandang
-pembersih = PembersihKandang()
-pembersih.bersihkan()
+    print()
+
+    pembersihan = PembersihanKandang()
+    pembersihan.bersihkan_kandang()
