@@ -1,11 +1,11 @@
-# 🧩 Latihan Analisis Prinsip SOLID
+# Latihan Analisis Prinsip SOLID
 
 Repository ini berisi tugas analisis penerapan prinsip **SOLID** pada program Python sederhana tentang sistem kebun binatang.
 Tugas dilakukan secara berkelompok dengan pembagian analisis setiap prinsip SOLID dan sinkronisasi menggunakan GitHub.
 
 ---
 
-## 📌 Deskripsi Tugas
+## Deskripsi Tugas
 
 Pada tugas ini, kami diminta untuk:
 
@@ -15,11 +15,11 @@ Pada tugas ini, kami diminta untuk:
 4. Melakukan pengerjaan secara berkelompok dan sinkronisasi project menggunakan GitHub.
 
 ---
-# 📖 Analisis Prinsip SOLID
+# Analisis Prinsip SOLID
 
 ---
 
-# 👥 Pembagian Tugas Kelompok
+# Pembagian Tugas Kelompok
 
 | Nama Anggota | Tugas |
 |---|---|
@@ -32,7 +32,7 @@ Pada tugas ini, kami diminta untuk:
 
 ---
 
-# 🖥️ Tutorial Menggunakan GitHub Desktop
+# Tutorial Menggunakan GitHub Desktop
 
 ## 01. Download dan Install GitHub Desktop
 - Download GitHub Desktop melalui website resmi GitHub.
@@ -134,7 +134,7 @@ Setelah sukses melakukan push, saatnya menggabungkan code kamu ke branch utama m
 
 ---
 
-# 🛠️ Teknologi yang Digunakan
+# Teknologi yang Digunakan
 
 - Python 3
 - GitHub Desktop
@@ -142,13 +142,13 @@ Setelah sukses melakukan push, saatnya menggabungkan code kamu ke branch utama m
 
 ---
 
-# 📚 Kesimpulan
+# Kesimpulan
 
 Lorem ipsum dolor amet.
 
 ---
 
-## ✨ Author
+## Author
 
 Kelompok 2 
 Mata Kuliah Pemrograman Berorientasi Object  
