@@ -15,9 +15,6 @@ Pada tugas ini, kami diminta untuk:
 4. Melakukan pengerjaan secara berkelompok dan sinkronisasi project menggunakan GitHub.
 
 ---
-# Analisis Prinsip SOLID
-
----
 
 # Pembagian Tugas Kelompok
 
@@ -144,7 +141,14 @@ Setelah sukses melakukan push, saatnya menggabungkan code kamu ke branch utama m
 
 # Kesimpulan
 
-Lorem ipsum dolor amet.
+Dari hasil analisis, kode awal belum memenuhi seluruh prinsip SOLID karena masih terdapat beberapa hal, seperti pemaksaan method `terbang()` kepada semua hewan dan ketergantungan langsung antar class.
+
+Dengan melakukan refactor menggunakan abstract class dan pemisahan interface, kode menjadi:
+
+* lebih fleksibel
+* mudah dikembangkan
+* lebih terstruktur
+* sesuai dengan prinsip SOLID
 
 ---
 
