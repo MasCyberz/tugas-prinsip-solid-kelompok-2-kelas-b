@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 # ANALISIS KESALAHAN
 
-# 1. SRP (Single Responsibility Principle) ❌
+# 1. SRP (Single Responsibility Principle)
 #    Class Kandang memiliki 2 tugas:
 #    - Menyimpan hewan
 #    - Membersihkan kandang
@@ -11,7 +11,7 @@ from abc import ABC, abstractmethod
 #    Pisahkan fitur membersihkan kandang ke class baru bernama PembersihKandang.
 
 
-# 2. ISP (Interface Segregation Principle) ❌
+# 2. ISP (Interface Segregation Principle)
 #    Semua hewan dipaksa memiliki method terbang().
 #
 #    Padahal:
@@ -22,14 +22,14 @@ from abc import ABC, abstractmethod
 #    Buat interface khusus untuk hewan yang memang bisa terbang.
 
 
-# 3. OCP (Open/Closed Principle) ❌
+# 3. OCP (Open/Closed Principle)
 #    Jika nanti ada hewan berenang, maka class Hewan harus diubah lagi.
 #
 #    Solusi:
 #    Pisahkan perilaku menjadi interface agar mudah dikembangkan tanpa mengubah class lama.
 
 
-# 4. DIP (Dependency Inversion Principle) ❌
+# 4. DIP (Dependency Inversion Principle)
 #    KebunBinatang langsung membuat object Kandang.
 #
 #    self.kandang = Kandang()
