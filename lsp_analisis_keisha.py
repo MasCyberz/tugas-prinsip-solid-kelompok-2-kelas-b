@@ -86,7 +86,6 @@ class BisaTerbang:
     def terbang(self):
         print(f"{self.nama} sedang terbang.")
 
-
 class BisaBerenang:
     def berenang(self):
         print(f"{self.nama} sedang berenang.")
