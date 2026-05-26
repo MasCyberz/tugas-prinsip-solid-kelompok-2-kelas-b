@@ -20,12 +20,12 @@ Pada tugas ini, kami diminta untuk:
 
 | Nama Anggota | Tugas |
 |---|---|
-| Gayuh | Analisis Single Responsibility Principle (SRP) |
-| Rindy | Analisis Open/Closed Principle (OCP) |
-| Keisha | Analisis Liskov Substitution Principle (LSP) |
-| Bintang | Analisis Interface Segregation Principle (ISP) |
-| Amelia | Analisis Dependency Inversion Principle (DIP) |
-| Dimas | Perbaikan kode & sinkronisasi GitHub |
+| Gayuh | Mengerjakan bagian hewan |
+| Rindy | Mengerjakan bagian zoo |
+| Keisha | Mengerjakan bagian interface |
+| Bintang | Mengerjakan bagian services |
+| Amelia | Mengerjakan bagian habitat |
+| Dimas | Perbaikan kode & Mengatur bagian main |
 
 ---
 
